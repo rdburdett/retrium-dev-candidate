@@ -1,14 +1,14 @@
-import chalk from 'chalk'
-const log = (stuff) => console.log(chalk.red(stuff))
+import chalk from "chalk";
+import { Cell, Grid } from "./classes.js";
+import { logCells } from "./helpers.js";
+
+const sampleGrid = [
+  []
+]
+
+const board = new Grid(5, [a1, a2])
 
 
-log(chalk.blue('Game of Life!'));
+console.log(board.cells)
 
-const petri = {
-  0: [true, false, false, false]
-}
-
-
-log(petri)
-
-console.log(petri[0])
+// logCells(Object.values(board))
