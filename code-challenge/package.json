@@ -2,6 +2,7 @@
 	"name": "code-challenge",
 	"version": "1.0.0",
 	"description": "Retrium developer code challenge",
+	"type": "module",
 	"scripts": {
 		"start": "nodemon --exec babel-node src/game.test.js"
 	},
