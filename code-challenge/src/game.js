@@ -1,14 +1,17 @@
 import chalk from "chalk";
 import { Cell, Grid } from "./classes.js";
-import { logCells } from "./helpers.js";
+import { logBoardValues, logBoardCells } from "./helpers.js";
+import { alive, dead } from "./theme.js";
 
 const sampleGrid = [
-  []
+  [alive, alive, dead, dead, dead],
+  [alive, alive, dead, dead, dead],
+  [dead, alive, alive, dead, dead],
+  [dead, alive, dead, dead, dead],
+  [dead, dead, dead, dead, dead]
 ]
 
-const board = new Grid(5, [a1, a2])
+const board = new Grid(3)
 
-
-console.log(board.cells)
-
-// logCells(Object.values(board))
+// logBoardValues(board)
+logBoardCells(board)
